@@ -1,67 +1,69 @@
 :root {
-    /* colors */
-    --color-accent: hsl(0, 100%, 50%);
-    --color-text: hsl(0, 0%, 100%);
-    --color-over: hsla(0, 0%, 0%, 0.2);
-    --color-bg: hsl(0, 0%, 10%);
+  /* colors */
+  --color-accent: hsl(260, 80%, 50%);
+  --color-text: hsl(0, 0%, 10%);
+  --color-over: hsla(0, 0%, 0%, 0.2);
+  --color-pad: hsl(0, 0%, 100%);
+  --color-bg: hsl(0, 0%, 97%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: hsl(260, 80%, 30%);
+    --color-text: hsl(0, 0%, 80%);
+    --color-over: hsla(0, 0%, 0%, 0.5);
+    --color-pad: hsl(0, 0%, 5%);
+    --color-bg: hsl(0, 0%, 0%);
   }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-accent: hsl(0, 100%, 50%);
-      --color-text: hsl(0, 0%, 80%);
-      --color-over: hsla(0, 0%, 0%, 0.5);
-      --color-bg: hsl(0, 0%, 0%);
-    }
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body,
-  #root {
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  body {
-    color: var(--color-text);
-    font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    font-weight: 800;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
-  
-  h3{
-    font-size: 16px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  small {
-    font: 12px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  color: var(--color-text);
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+}
+
+small {
+  font: 12px;
+}
+
+a {
+  text-decoration: none;
+}
