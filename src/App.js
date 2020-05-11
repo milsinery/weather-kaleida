@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      Weather Caleida — coming soon.
+      Weather Kaleida — coming soon.
     </div>
   );
 }
