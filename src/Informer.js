@@ -3,10 +3,8 @@ import "./Informer.css";
 
 const Informer = ({ data }) => {
   const {
-    wx_code,
     wx_desc,
     temp_c,
-    winddir_deg,
     winddir_compass,
     windspd_ms,
   } = data;

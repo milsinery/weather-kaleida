@@ -32,12 +32,12 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Scene></Scene>
-      <Informer data={!loading && data}></Informer>
-      <div className="copyright">
+      <Scene data={!loading && data}></Scene>
+      {/* <Informer data={!loading && data}></Informer> */}
+      {/* <div className="copyright">
         <small className="copyright">Designed by <a href="mailto:milsinery@icloud.com" target="_blank" rel="noreferrer noopener">Milsinery</a></small>
         <small className="copyright">Powered by <a href="https://developer.weatherunlocked.com" target="_blank" rel="noreferrer noopener">Weather Unlocked</a></small>
-      </div>
+      </div> */}
     </div>
   );
 }

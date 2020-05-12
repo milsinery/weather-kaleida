@@ -4,8 +4,9 @@
   align-content: center;
   justify-content: center;
   gap: 1vmin 1vmin;
-  grid-template-columns: repeat(15, 2vmin);
-  grid-template-rows: repeat(15, 2vmin);
+  grid-template-columns: repeat(15, 3vmin);
+  grid-template-rows: repeat(15, 3vmin);
+  transform: rotate(45deg);
 }
 
 .scene__cell {
@@ -19,6 +20,20 @@
 .scene__item {
   height: 100%;
   width: 100%;
-  border-radius: 4px;
-  background-color: green;
+  border-radius: 2px;
+}
+
+.scene_in {
+  animation-name: effect-in;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes effect-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;;
+  }
 }
