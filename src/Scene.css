@@ -1,0 +1,24 @@
+.scene {
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: 1vmin 1vmin;
+  grid-template-columns: repeat(15, 2vmin);
+  grid-template-rows: repeat(15, 2vmin);
+}
+
+.scene__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.scene__item {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: green;
+}
