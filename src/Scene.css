@@ -23,13 +23,14 @@
   border-radius: 2px;
 }
 
-.scene_in {
-  animation-name: effect-in;
-  animation-duration: 1200ms;
+.effect-in {
+  animation-name: in;
+  animation-duration: 600ms;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
-@keyframes effect-in {
+@keyframes in {
   0% {
     opacity: 0;
   }

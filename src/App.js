@@ -16,7 +16,6 @@ function App() {
         .then((response) => response.json())
         .then((content) => {
           setData(content);
-          console.log(data);
           setLoading(false);
         })
         .catch((error) => {
@@ -28,6 +27,7 @@ function App() {
 
   useEffect(() => {
     getData(url);
+    console.log(data);
   });
 
   return (

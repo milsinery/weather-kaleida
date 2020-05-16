@@ -16,7 +16,7 @@ const Informer = ({ data }) => {
         <h2>{temp_c}</h2>
         <h3>{wx_desc}</h3>
         <p>
-          {winddir_compass} {Math.round(windspd_ms)} m/s
+          {data && `${winddir_compass} ${Math.round(windspd_ms)} m/s`}
         </p>
       </div>
       <div className="informer_description"></div>
