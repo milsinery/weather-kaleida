@@ -23,21 +23,44 @@
   border-radius: 2px;
 }
 
-.effect-in {
-  animation-name: in;
-  animation-duration: 600ms;
+.effect-min-max-ok {
+  animation-name: min-max-ok;
+  animation-duration: 1200ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
 
-@keyframes in {
+.effect-max-min-ok {
+  animation-name: max-min-ok;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes min-max-ok {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: scale(0.5);
   }
   75% {
     transform: scale(1.2);
   }
   100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes max-min-ok {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
