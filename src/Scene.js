@@ -12,7 +12,7 @@ const Scene = ({ data }) => {
   console.log(arr);
 
   return (
-    <div className="scene">
+    <div className="scene effect-scene-in">
       {arr.map((item, key) => (
         <div key={key} className={key % 2 === 0 ? "scene__cell effect-max-min-ok" : "scene__cell effect-min-max-ok" } >
           <div

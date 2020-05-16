@@ -1,4 +1,5 @@
 .informer {
+    opacity: 0;
     position: fixed;
     top: 4vmin;
     left: 5vmin;

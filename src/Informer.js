@@ -10,7 +10,7 @@ const Informer = ({ data }) => {
   } = data;
 
   return (
-    <div className="informer">
+    <div className="informer effect-slide-down">
       <div className="informer__title">
         <h1>Saint Petersburg</h1>
         <h2>{temp_c}</h2>
