@@ -78,18 +78,18 @@
 @keyframes scene-in {
   0% {
     opacity: 0;
-    transform: scale(2) rotate(45deg);
+    transform: scale(1) rotate(45deg);
   }
   60% {
-    transform: scale(4) rotate(45deg);
+    transform: scale(0.8) rotate(45deg);
   }
   90% {
     opacity: 1;
-    transform: scale(0.9) rotate(45deg);
+    transform: scale(4) rotate(45deg);
   }
   100% {
     opacity: 1;
-    transform: scale(1) rotate(45deg);
+    transform: scale(3) rotate(45deg);
   }
 }
 
