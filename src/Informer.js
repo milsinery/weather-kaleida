@@ -3,20 +3,20 @@ import "./Informer.css";
 
 const Informer = ({ data }) => {
   const {
-    wx_desc,
-    temp_c,
-    winddir_compass,
-    windspd_ms,
+    wx_desc: desc,
+    temp_c: temp,
+    winddir_compass: windDirection,
+    windspd_ms: windSpeed,
   } = data;
 
   return (
     <div className="informer effect-slide-down">
       <div className="informer__title">
         <h1>Saint Petersburg</h1>
-        <h2>{temp_c}</h2>
-        <h3>{wx_desc}</h3>
+        <h2>{temp}</h2>
+        <h3>{desc}</h3>
         <p>
-          {data && `${winddir_compass} ${Math.round(windspd_ms)} m/s`}
+          {data && `${windDirection} ${Math.round(windSpeed)} m/s`}
         </p>
       </div>
       <div className="informer_description"></div>
