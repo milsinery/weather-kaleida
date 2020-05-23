@@ -51,6 +51,15 @@
   animation-timing-function: ease-in;
 }
 
+.effect-wind {
+  animation-name: wind;
+  animation-delay: 2200ms;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
 @keyframes min-max-ok {
   0% {
     transform: scale(0.5);
@@ -78,18 +87,14 @@
 @keyframes scene-in {
   0% {
     opacity: 0;
-    transform: scale(1) rotate(45deg);
+    transform: scale(2) rotate(45deg);
   }
   60% {
-    transform: scale(0.8) rotate(45deg);
-  }
-  90% {
-    opacity: 1;
     transform: scale(4) rotate(45deg);
   }
   100% {
     opacity: 1;
-    transform: scale(3) rotate(45deg);
+    transform: scale(1) rotate(45deg);
   }
 }
 
@@ -103,5 +108,17 @@
     opacity: 1;
     transform: scale(1);
     filter: blur(0);
+  }
+}
+
+@keyframes wind {
+  0% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }

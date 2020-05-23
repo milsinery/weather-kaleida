@@ -2,33 +2,50 @@ import React from "react";
 import "./Scene.css";
 
 const Scene = ({ data }) => {
-  const { temp_c, wx_code, winddir_deg, windspd_ms } = data;
-  const arr = [...new Array(225)].map(() => ({temp_c, wx_code, winddir_deg, windspd_ms}));
+  const {
+    wx_code: code,
+    temp_c: temp,
+    winddir_compass: windDirection,
+    windspd_ms: windSpeed,
+  } = data;
 
-  // const changer = (num) => {
-  //   arr[num];
-  // }
+  const arr = [...new Array(225)].map(() => ({
+    temp,
+    code,
+    windDirection,
+    windSpeed,
+  }));
 
   console.log(arr);
 
+  return <Cell data={arr}></Cell>;
+};
+
+const Cell = ({ data }) => {
+
   return (
     <div className="scene effect-scene-in">
-      {arr.map((item, key) => (
-        <div key={key} className={key % 2 === 0 ? "scene__cell effect-max-min-ok" : "scene__cell effect-min-max-ok" } >
+      {data.map((item, key) => (
+        <div
+          key={key}
+          className={
+            key % Math.floor(Math.random() * 10) === 0
+              ? "scene__cell effect-max-min-ok"
+              : "scene__cell effect-min-max-ok"
+          }
+        >
           <div
-            style={{ backgroundColor: `hsl(${temp_c * Math.random() * Math.floor(10)}, 80%, 50%)` }}
-            className="scene__item"
+            style={{
+              backgroundColor: `hsl(${item.temp * (Math.random() * 2)}, 80%, 50%)`,
+            }}
+            className={
+              key % Math.floor(Math.random() * 10) === 0
+                ? "scene__item effect-wind"
+                : "scene__item"
+            }
           ></div>
         </div>
       ))}
-    </div>
-  );
-};
-
-const Cell = (props) => {
-  return (
-    <div className="scene__cell">
-      <div className="scene__item"></div>
     </div>
   );
 };
