@@ -67,3 +67,26 @@ small {
 a {
   text-decoration: none;
 }
+
+/* adaptive */
+
+@media (max-width: 480px) {
+  body:after {
+    content: "Emulating mobile device on desktop or laptop"
+  }
+}
+
+/* mobile  */
+
+@media (hover: none) and (pointer: coarse) and (max-width: 480px) {
+  :root {
+    --space-bottom: 40px;
+  }
+  #root {
+    overflow-y: scroll;
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
