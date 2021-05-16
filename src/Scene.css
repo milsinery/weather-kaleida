@@ -57,7 +57,7 @@
   animation-duration: 1200ms;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes min-max-ok {
@@ -115,7 +115,10 @@
   0% {
     transform: rotate(0);
   }
-  70% {
+  30% {
+    transform: rotate(15deg);
+  }
+  70%{
     transform: rotate(15deg);
   }
   100% {
